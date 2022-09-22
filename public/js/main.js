@@ -10,6 +10,10 @@ let formattedData = data
     return data.slice(idx * 4, (idx + 1) * 4);
   });
 
+function avatarUrl(avatar) {
+  return `https://res.cloudinary.com/asfian99/image/upload/c_scale,w_540/v1663838342/d3-itb-2020/${avatar}.webp`;
+}
+
 /**
  * @param {typeof data} items
  * @returns {string}
@@ -19,8 +23,8 @@ function getContent(items) {
     <div class="row">
       <div class="col">
         <span></span>
-        <a href="${items[0].avatar}" data-lightbox="roadtrip">
-          <img src="${items[0].avatar}" alt="${items[0].name}"/>
+        <a href="${avatarUrl(items[0].avatar)}" data-lightbox="roadtrip">
+          <img src="${avatarUrl(items[0].avatar)}" alt="${items[0].name}"/>
         </a>
       </div>
       <div class="col">
@@ -40,8 +44,8 @@ function getContent(items) {
       </div>
       <div class="col">
         <span></span>
-        <a href="${items[1].avatar}" data-lightbox="roadtrip">
-          <img src="${items[1].avatar}" alt="${items[1].name}"/>
+        <a href="${avatarUrl(items[1].avatar)}" data-lightbox="roadtrip">
+          <img src="${avatarUrl(items[1].avatar)}" alt="${items[1].name}"/>
         </a>
       </div>
       <div class="col">
@@ -76,8 +80,8 @@ function getContent(items) {
       </div>
       <div class="col">
         <span class="arrow"></span>
-        <a href="${items[2].avatar}" data-lightbox="roadtrip">
-          <img src="${items[2].avatar}" alt="${items[2].name}"/>
+        <a href="${avatarUrl(items[2].avatar)}" data-lightbox="roadtrip">
+          <img src="${avatarUrl(items[2].avatar)}" alt="${items[2].name}"/>
         </a>
       </div>
       <div class="col">
@@ -97,8 +101,8 @@ function getContent(items) {
       </div>
       <div class="col">
         <span class="arrow"></span>
-        <a href="${items[3].avatar}" data-lightbox="roadtrip">
-          <img src="${items[3].avatar}" alt="${items[3].name}"/>
+        <a href="${avatarUrl(items[3].avatar)}" data-lightbox="roadtrip">
+          <img src="${avatarUrl(items[3].avatar)}" alt="${items[3].name}"/>
         </a>
       </div>
     </div>
