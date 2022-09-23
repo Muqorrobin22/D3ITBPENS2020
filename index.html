@@ -1,460 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IT B</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/animatedFont.css">
-    <link rel="stylesheet" href="css/lightbox.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
-</head>
-
-<body>
-
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>D3 IT B 2020</title>
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="stylesheet" href="./src/css/animatedFont.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <div class="title">
-        <h1>WELCOME TO D3 IT B 2020</h1>
+      <h1>WELCOME TO D3 IT B 2020</h1>
     </div>
     <!-- Animation -->
     <div class="square">
-        <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
     </div>
     <div class="circle">
-        <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
     </div>
     <!-- end Animation -->
 
     <div class="video">
-        <video controls id="video" poster="img/logo.jpeg">
-            <source src="img/Sequence 01-1.m4v" type="video/mp4">
-        </video>
+      <video controls id="video" poster="img/logo.jpeg">
+        <source src="img/Sequence 01-1.m4v" type="video/mp4" />
+      </video>
     </div>
 
     <div class="gallery">
-        <h3>OUR GALLERY</h3>
+      <h3>OUR GALLERY</h3>
     </div>
 
-    <div class="row">
-        <div class="col">
-            <span></span>
-            <a href="img/images/1.png" data-lightbox="roadtrip"><img src="img/images/1.png" alt=""></a>
-        </div>
-        <div class="col">
-            <h3>Abier Rahma</h3>
-            <p>09 Januari 2002</p>
-            <div class="social-link">
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="https://instagram.com/abierrr_"><i class="fa fa-instagram"></i></a>
-            </div>
-        </div>
-        <div class="col">
-            <span></span>
-            <a href="img/images/2.png" data-lightbox="roadtrip"><img src="img/images/2.png" alt=""></a>
-        </div>
-        <div class="col">
-            <h3>Ibnu Qoribtullah</h3>
-            <p>Unknown</p>
-            <div class="social-link">
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="https://instagram.com/"><i class="fa fa-instagram"></i></a>
-            </div>
-        </div>
-        <div class="col">
+    <main id="class_member"></main>
 
-            <h3>Faiza</h3>
-            <p>05 November 2001</p>
-            <div class="social-link">
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="https://instagram.com/faizatulaisyah_17"><i class="fa fa-instagram"></i></a>
-            </div>
-        </div>
-        <div class="col">
-            <span class="arrow"></span>
-            <a href="img/images/3.png" data-lightbox="roadtrip"><img src="img/images/3.png" alt=""></a>
-        </div>
-        <div class="col">
-
-            <h3>Valentino Harpa</h3>
-            <p>14 Februari 2002</p>
-            <div class="social-link">
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="https://instagram.com/bukanvalen"><i class="fa fa-instagram"></i></a>
-            </div>
-        </div>
-        <div class="col">
-            <span class="arrow"></span>
-            <a href="img/images/4.png" data-lightbox="roadtrip"><img src="img/images/4.png" alt=""></a>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col">
-            <span></span>
-            <a href="img/images/5.png" data-lightbox="roadtrip"><img src="img/images/5.png" alt=""></a>
-        </div>
-        <div class="col">
-            <h3>Aldo</h3>
-            <p>Unknown</p>
-            <div class="social-link">
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="https://instagram.com/"><i class="fa fa-instagram"></i></a>
-            </div>
-        </div>
-        <div class="col">
-            <span></span>
-            <a href="img/images/6.png" data-lightbox="roadtrip"><img src="img/images/6.png" alt=""></a>
-        </div>
-        <div class="col">
-            <h3>Rhevy</h3>
-            <p>09 November 2002</p>
-            <div class="social-link">
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="https://instagram.com/rhevyrp"><i class="fa fa-instagram"></i></a>
-            </div>
-        </div>
-        <div class="col">
-
-            <h3>Revaldo</h3>
-            <p>11 November 2002</p>
-            <div class="social-link">
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="https://instagram.com/xxrevv"><i class="fa fa-instagram"></i></a>
-            </div>
-        </div>
-        <div class="col">
-            <span class="arrow"></span>
-            <a href="img/images/7.png" data-lightbox="roadtrip"><img src="img/images/7.png" alt=""></a>
-        </div>
-        <div class="col">
-
-            <h3>Irfan</h3>
-            <p>24 Desember 2001</p>
-            <div class="social-link">
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="https://instagram.com/irfantaufiqr_"><i class="fa fa-instagram"></i></a>
-            </div>
-        </div>
-        <div class="col">
-            <span class="arrow"></span>
-            <a href="img/images/8.png" data-lightbox="roadtrip"><img src="img/images/8.png" alt=""></a>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col">
-            <span></span>
-            <a href="img/images/9.png" data-lightbox="roadtrip"><img src="img/images/9.png" alt=""></a>
-        </div>
-        <div class="col">
-            <h3>Rafi</h3>
-            <p>Unknown</p>
-            <div class="social-link">
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="https://instagram.com/"><i class="fa fa-instagram"></i></a>
-            </div>
-        </div>
-        <div class="col">
-            <span></span>
-            <a href="img/images/10.png" data-lightbox="roadtrip"><img src="img/images/10.png" alt=""></a>
-        </div>
-        <div class="col">
-            <h3>Farida</h3>
-            <p>12 Januari 2003</p>
-            <div class="social-link">
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="https://instagram.com/faridaaapd"><i class="fa fa-instagram"></i></a>
-            </div>
-        </div>
-        <div class="col">
-
-            <h3>Khoiron</h3>
-            <p>14 April 2001</p>
-            <div class="social-link">
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="https://instagram.com/"><i class="fa fa-instagram"></i></a>
-            </div>
-        </div>
-        <div class="col">
-            <span class="arrow"></span>
-            <a href="img/images/11.png" data-lightbox="roadtrip"><img src="img/images/11.png" alt=""></a>
-        </div>
-        <div class="col">
-
-            <h3>Frisca</h3>
-            <p>Unknown</p>
-            <div class="social-link">
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="https://instagram.com/"><i class="fa fa-instagram"></i></a>
-            </div>
-        </div>
-        <div class="col">
-            <span class="arrow"></span>
-            <a href="img/images/12.png" data-lightbox="roadtrip"><img src="img/images/12.png" alt=""></a>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col">
-            <span></span>
-            <a href="img/images/13.png" data-lightbox="roadtrip"><img src="img/images/13.png" alt=""></a>
-        </div>
-        <div class="col">
-            <h3>Khoirol Asfian</h3>
-            <p>Unknown</p>
-            <div class="social-link">
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="https://instagram.com/"><i class="fa fa-instagram"></i></a>
-            </div>
-        </div>
-        <div class="col">
-            <span></span>
-            <a href="img/images/14.png" data-lightbox="roadtrip"><img src="img/images/14.png" alt=""></a>
-        </div>
-        <div class="col">
-            <h3>Reza</h3>
-            <p>Unknown</p>
-            <div class="social-link">
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="https://instagram.com/"><i class="fa fa-instagram"></i></a>
-            </div>
-        </div>
-        <div class="col">
-
-            <h3>Sesil</h3>
-            <p>08 Juli 2002</p>
-            <div class="social-link">
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="https://instagram.com/sesiliasj_"><i class="fa fa-instagram"></i></a>
-            </div>
-        </div>
-        <div class="col">
-            <span class="arrow"></span>
-            <a href="img/images/15.png" data-lightbox="roadtrip"><img src="img/images/15.png" alt=""></a>
-        </div>
-        <div class="col">
-
-            <h3>Adit</h3>
-            <p>Unknown</p>
-            <div class="social-link">
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="https://instagram.com/"><i class="fa fa-instagram"></i></a>
-            </div>
-        </div>
-        <div class="col">
-            <span class="arrow"></span>
-            <a href="img/images/17.png" data-lightbox="roadtrip"><img src="img/images/17.png" alt=""></a>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col">
-            <span></span>
-            <a href="img/images/16.png" data-lightbox="roadtrip"><img src="img/images/16.png" alt=""></a>
-        </div>
-        <div class="col">
-            <h3>Robin</h3>
-            <p>16 Oktober 2001</p>
-            <div class="social-link">
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="https://instagram.com/ach_muqorrobin"><i class="fa fa-instagram"></i></a>
-            </div>
-        </div>
-        <div class="col">
-            <span></span>
-            <a href="img/images/20.png" data-lightbox="roadtrip"><img src="img/images/20.png" alt=""></a>
-        </div>
-        <div class="col">
-            <h3>Cahya</h3>
-            <p>11 Januari 2002</p>
-            <div class="social-link">
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="https://instagram.com/cahyawm11"><i class="fa fa-instagram"></i></a>
-            </div>
-        </div>
-        <div class="col">
-
-            <h3>Nanang</h3>
-            <p>10 Oktober 2001</p>
-            <div class="social-link">
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="https://instagram.com/nanang_aditya01"><i class="fa fa-instagram"></i></a>
-            </div>
-        </div>
-        <div class="col">
-            <span class="arrow"></span>
-            <a href="img/images/18.png" data-lightbox="roadtrip"><img src="img/images/18.png" alt=""></a>
-        </div>
-        <div class="col">
-
-            <h3>Arya</h3>
-            <p>26 Agustus 2001</p>
-            <div class="social-link">
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="https://instagram.com/maryaputrap"><i class="fa fa-instagram"></i></a>
-            </div>
-        </div>
-        <div class="col">
-            <span class="arrow"></span>
-            <a href="img/images/19.png" data-lightbox="roadtrip"><img src="img/images/19.png" alt=""></a>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col">
-            <span></span>
-            <a href="img/images/21.png" data-lightbox="roadtrip"><img src="img/images/21.png" alt=""></a>
-        </div>
-        <div class="col">
-            <h3>Ranid</h3>
-            <p>11 Februari 2002</p>
-            <div class="social-link">
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="https://instagram.com/ranidyaputri"><i class="fa fa-instagram"></i></a>
-            </div>
-        </div>
-        <div class="col">
-            <span></span>
-            <a href="img/images/22.png" data-lightbox="roadtrip"><img src="img/images/22.png" alt=""></a>
-        </div>
-        <div class="col">
-            <h3>Fahri</h3>
-            <p>01 Februari 2002</p>
-            <div class="social-link">
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="https://instagram.com/fahrimuda"><i class="fa fa-instagram"></i></a>
-            </div>
-        </div>
-        <div class="col">
-
-            <h3>Riska</h3>
-            <p>20 Januari 2002</p>
-            <div class="social-link">
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="https://instagram.com/riskanggraenii_"><i class="fa fa-instagram"></i></a>
-            </div>
-        </div>
-        <div class="col">
-            <span class="arrow"></span>
-            <a href="img/images/23.png" data-lightbox="roadtrip"><img src="img/images/23.png" alt=""></a>
-        </div>
-        <div class="col">
-
-            <h3>Sabil</h3>
-            <p>23 Desember 1999</p>
-            <div class="social-link">
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="https://instagram.com/svbila"><i class="fa fa-instagram"></i></a>
-            </div>
-        </div>
-        <div class="col">
-            <span class="arrow"></span>
-            <a href="img/images/24.png" data-lightbox="roadtrip"><img src="img/images/24.png" alt=""></a>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col">
-            <span></span>
-            <a href="img/images/25.png" data-lightbox="roadtrip"><img src="img/images/25.png" alt=""></a>
-        </div>
-        <div class="col">
-            <h3>Reyhana</h3>
-            <p>Unknown</p>
-            <div class="social-link">
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="https://instagram.com/"><i class="fa fa-instagram"></i></a>
-            </div>
-        </div>
-        <div class="col">
-            <span></span>
-            <a href="img/images/26.png" data-lightbox="roadtrip"><img src="img/images/26.png" alt=""></a>
-        </div>
-        <div class="col">
-            <h3>Harits</h3>
-            <p>Unknown</p>
-            <div class="social-link">
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="https://instagram.com/"><i class="fa fa-instagram"></i></a>
-            </div>
-        </div>
-        <div class="col">
-
-            <h3>Wachid</h3>
-            <p>08 November 2001</p>
-            <div class="social-link">
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="https://instagram.com/wachid7493"><i class="fa fa-instagram"></i></a>
-            </div>
-        </div>
-        <div class="col">
-            <span class="arrow"></span>
-            <a href="img/images/27.png" data-lightbox="roadtrip"><img src="img/images/27.png" alt=""></a>
-        </div>
-        <div class="col">
-
-            <h3>Tika</h3>
-            <p>15 Maret 2002</p>
-            <div class="social-link">
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="https://instagram.com/tikazhraf"><i class="fa fa-instagram"></i></a>
-            </div>
-        </div>
-        <div class="col">
-            <span class="arrow"></span>
-            <a href="img/images/28.png" data-lightbox="roadtrip"><img src="img/images/28.png" alt=""></a>
-        </div>
-    </div>
-
-
-    <div class="footer">
-        <h3>Copyright IT B &copy; 2020 Designed by Robin </h3>
-    </div>
-    <script src="js/lightbox-plus-jquery.min.js"></script>
-</body>
-
+    <script type="module" src="./src/js/main.js"></script>
+  </body>
 </html>
