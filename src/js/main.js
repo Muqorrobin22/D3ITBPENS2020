@@ -11,7 +11,7 @@ let formattedData = data
   });
 
 function avatarUrl(avatar) {
-  return `https://res.cloudinary.com/asfian99/image/upload/c_scale,w_540/v1663838342/d3-itb-2020/${avatar}.webp`;
+  return `https://res.cloudinary.com/rulasfia/image/upload/c_scale,w_540/v1663838342/d3-itb-2020/${avatar}.webp`;
 }
 
 /**
@@ -19,94 +19,106 @@ function avatarUrl(avatar) {
  * @returns {string}
  */
 function getContent(items) {
+  const [one, two, three, four] = items;
   return `
     <div class="row">
       <div class="col">
         <span></span>
-        <a href="${avatarUrl(items[0].avatar)}" data-lightbox="roadtrip">
-          <img src="${avatarUrl(items[0].avatar)}" alt="${items[0].name}"/>
+        <a target="_blank" href="${avatarUrl(
+          one.avatar
+        )}" data-lightbox="roadtrip">
+          <img loading="lazy" src="${avatarUrl(one.avatar)}" alt="${one.name}"/>
         </a>
       </div>
       <div class="col">
-        <h3>${items[0].name}</h3>
-        <p>${items[0].birthday}</p>
+        <h3>${one.name}</h3>
+        <p>${one.birthday}</p>
         <div class="social-link">
-          <a href="${items[0].social.facebook}">
+          <a href="${one.social.facebook}">
             <i class="fa fa-facebook"></i>
           </a>
-          <a href="${items[0].social.twitter}">
+          <a href="${one.social.twitter}">
             <i class="fa fa-twitter"></i>
           </a>
-          <a href="${items[0].social.instagram}">
+          <a href="${one.social.instagram}">
             <i class="fa fa-instagram"></i>
           </a>
         </div>
       </div>
       <div class="col">
         <span></span>
-        <a href="${avatarUrl(items[1].avatar)}" data-lightbox="roadtrip">
-          <img src="${avatarUrl(items[1].avatar)}" alt="${items[1].name}"/>
+        <a target="_blank" href="${avatarUrl(
+          two.avatar
+        )}" data-lightbox="roadtrip">
+          <img loading="lazy" src="${avatarUrl(two.avatar)}" alt="${two.name}"/>
         </a>
       </div>
       <div class="col">
-        <h3>${items[1].name}</h3>
-        <p>${items[1].birthday || "Unknown"}</p>
+        <h3>${two.name}</h3>
+        <p>${two.birthday || "Unknown"}</p>
         <div class="social-link">
-          <a href="${items[1].social.facebook}">
+          <a href="${two.social.facebook}">
             <i class="fa fa-facebook"></i>
           </a>
-          <a href="${items[1].social.twitter}">
+          <a href="${two.social.twitter}">
             <i class="fa fa-twitter"></i>
           </a>
-          <a href="${items[1].social.instagram}">
+          <a href="${two.social.instagram}">
             <i class="fa fa-instagram"></i>
           </a>
         </div>
       </div>
       <div class="col">
-        <h3>${items[2].name}</h3>
-        <p>${items[2].birthday || "Unknown"}</p>
+        <h3>${three.name}</h3>
+        <p>${three.birthday || "Unknown"}</p>
         <div class="social-link">
-          <a href="${items[2].social.facebook}">
+          <a href="${three.social.facebook}">
             <i class="fa fa-facebook"></i>
           </a>
-          <a href="${items[2].social.twitter}">
+          <a href="${three.social.twitter}">
             <i class="fa fa-twitter"></i>
           </a>
-          <a href="${items[2].social.instagram}">
+          <a href="${three.social.instagram}">
             <i class="fa fa-instagram"></i>
           </a>
         </div>
       </div>
       <div class="col">
         <span class="arrow"></span>
-        <a href="${avatarUrl(items[2].avatar)}" data-lightbox="roadtrip">
-          <img src="${avatarUrl(items[2].avatar)}" alt="${items[2].name}"/>
+        <a target="_blank" href="${avatarUrl(
+          three.avatar
+        )}" data-lightbox="roadtrip">
+          <img loading="lazy" src="${avatarUrl(three.avatar)}" alt="${
+    three.name
+  }"/>
         </a>
       </div>
       <div class="col">
-        <h3>${items[3].name}</h3>
-        <p>${items[3].birthday || "Unknown"}</p>
+        <h3>${four.name}</h3>
+        <p>${four.birthday || "Unknown"}</p>
         <div class="social-link">
-          <a href="${items[3].social.facebook}">
+          <a href="${four.social.facebook}">
             <i class="fa fa-facebook"></i>
           </a>
-          <a href="${items[3].social.twitter}">
+          <a href="${four.social.twitter}">
             <i class="fa fa-twitter"></i>
           </a>
-          <a href="${items[3].social.instagram}">
+          <a href="${four.social.instagram}">
             <i class="fa fa-instagram"></i>
           </a>
         </div>
       </div>
       <div class="col">
         <span class="arrow"></span>
-        <a href="${avatarUrl(items[3].avatar)}" data-lightbox="roadtrip">
-          <img src="${avatarUrl(items[3].avatar)}" alt="${items[3].name}"/>
+        <a target="_blank" href="${avatarUrl(
+          four.avatar
+        )}" data-lightbox="roadtrip">
+          <img loading="lazy" src="${avatarUrl(four.avatar)}" alt="${
+    four.name
+  }"/>
         </a>
       </div>
     </div>
-    <br/>
     `;
 }
 
